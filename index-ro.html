@@ -1005,6 +1005,114 @@
   background: rgba(212,175,55,0.12);
   transform: translateX(-4px);
 }
+   /* HEADER */
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-link {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.back-link:hover {
+  color: #d4af37;
+  transform: translateX(-3px);
+}
+
+.lang-switch {
+  font-size: 0.85rem;
+}
+
+.lang-switch a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+}
+
+.lang-switch a.active {
+  color: #ffffff;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+/* HERO */
+.hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.hero-label {
+  font-size: 1.05rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.hero-kicker {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 14px;
+}
+
+.hero-quote {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.hero-subheadline {
+  font-size: 1.05rem;
+  color: #d4af37;
+  margin-bottom: 14px;
+}
+
+.hero-subtitle {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 22px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-target {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 8px;
+}
+
+.hero-proof {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-quote {
+    font-size: 1.8rem;
+  }
+
+  .hero-inner {
+    padding: 28px 18px;
+  }
+
+  .header-inner {
+    padding: 12px 18px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -1034,37 +1142,60 @@
   </header>
 
   <section id="hero-section">
-    <div class="hero-inner">
-      <a href="https://danvchiculita.github.io/retail-check/index-ro.html" class="back-link">
-  ← Înapoi la Retail Check
-</a>
+    <header>
+  <div class="header-inner">
+
+    <!-- BACK -->
+    <a href="https://danvchiculita.github.io/retail-check/index-ro.html" class="back-link">
+      ← Înapoi la Retail Check
     </a>
-      <div class="eyebrow hero-label">DIAGNOSTIC COMERCIAL EXPRESS</div>
-      <p class="hero-kicker">Când vânzările se mișcă, dar profitul, vizibilitatea sau controlul nu, problema este de regulă structurală.</p>
-      <h1 class="hero-quote">Claritate înainte de următoarea greșeală comercială.</h1>
-      <p class="hero-subtitle">
-        Un diagnostic comercial focalizat, conceput pentru a izola problema structurală din spatele erodării marjei, promoțiilor ineficiente, execuției slabe în retail sau unei logici fragile de listare — înainte ca aceasta să devină mai costisitoare.
-      </p>
 
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Solicită diagnosticul</a>
-        <a href="#critical-points" class="btn-secondary">Vezi ce verifică</a>
-      </div>
-
-      <div class="hero-note">Pentru furnizori FMCG, antreprenori și lideri comerciali care au nevoie de o citire mai clară înainte de negociere, expansiune sau corecție.</div>
+    <!-- LANGUAGE -->
+    <div class="lang-switch">
+      <a href="https://danvchiculita.github.io/retail-diagnostic-comercial/index-ro.html" class="active">RO</a>
+      <span>|</span>
+      <a href="https://danvchiculita.github.io/retail-diagnostic-comercial/">EN</a>
     </div>
-  </section>
 
-  <section class="promise-strip">
-    <div class="container">
-      <strong>
-        Diagnostic Comercial Express este o intervenție focalizată pe o problemă comercială concretă — înainte ca aceasta să devină costisitoare.
-      </strong>
-      <p>
-        Este punctul de claritate care îți arată dacă problema necesită un audit comercial sau o intervenție punctuală.
-      </p>
+  </div>
+</header>
+
+<section id="hero-section">
+  <div class="hero-inner">
+
+    <div class="hero-label">DIAGNOSTIC COMERCIAL EXPRESS</div>
+
+    <p class="hero-kicker">
+      Când vânzările cresc, dar profitul, vizibilitatea sau controlul nu, problema este de regulă structurală.
+    </p>
+
+    <h1 class="hero-quote">
+      Claritate înainte de următoarea greșeală comercială.
+    </h1>
+
+    <p class="hero-subheadline">
+      Vezi unde pierzi profit — înainte să devină structural.
+    </p>
+
+    <p class="hero-subtitle">
+      O intervenție focalizată pe problema comercială reală — înainte să devină costisitoare.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#form-section" class="btn btn-primary">Solicită diagnosticul</a>
+      <a href="#ce-analizam" class="btn btn-secondary">Vezi ce analizăm</a>
     </div>
-  </section>
+
+    <p class="hero-target">
+      Pentru furnizori FMCG, antreprenori și lideri comerciali care au nevoie de claritate înainte de negociere, expansiune sau corecție.
+    </p>
+
+    <p class="hero-proof">
+      Fără prezentări standard. Doar analiză aplicată pe situația ta.
+    </p>
+
+  </div>
+</section>
 
   <section class="triptych">
     <div class="triptych-top">
