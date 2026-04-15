@@ -45,19 +45,25 @@
        HEADER
     ========================= */
 
-    header {
-      position: relative;
-      z-index: 20;
-    }
+   header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 30;
+}
 
-    .header-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 18px 24px 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+#hero-section {
+  background:
+    linear-gradient(rgba(5,10,20,0.86), rgba(5,10,20,0.86)),
+    url('supermarket.jpg') center center / cover no-repeat;
+  color: white;
+  text-align: center;
+@media (max-width: 768px) {
+  #hero-section {
+    padding: 96px 18px 64px;
+  }
+}
 
     .back-link {
       display: inline-flex;
